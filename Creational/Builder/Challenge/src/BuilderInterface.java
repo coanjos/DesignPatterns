@@ -7,7 +7,7 @@ public interface BuilderInterface {
 }
 
 class PegasusCloth implements BuilderInterface {
-    private Product product = new Product();
+    private final Product product = new Product();
 
     @Override
     public void addHelmet() {
@@ -36,7 +36,7 @@ class PegasusCloth implements BuilderInterface {
 }
 
 class DragonCloth implements BuilderInterface {
-    private Product product = new Product();
+    private final Product product = new Product();
 
     @Override
     public void addHelmet() {
